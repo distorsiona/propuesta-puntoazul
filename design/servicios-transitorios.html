@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Servicios Transitorios (EST) en Chile con Punto Azul. Cobertura inmediata de licencias, vacaciones y proyectos con respaldo legal estricto.">
+<title>Servicios Transitorios (EST) — Punto Azul</title>
+<style>
+:root{--blue:#1247b9;--deep:#102d60;--ink:#172d4b;--muted:#5b6a7e;--line:#dce3eb;--paper:#f4f7fa;--sky:#eaf1ff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:Helvetica,Arial,sans-serif;line-height:1.6;background:white}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+h1,h2,h3,p{margin:0}
+h1,h2,h3{line-height:1.15;letter-spacing:-.035em}
+.wrap{width:min(1140px,calc(100% - 60px));margin:auto}
+
+/* Topbar & Header */
+.topbar{background:var(--deep);color:#fff;font-size:11px;letter-spacing:.04em;padding:8px 0}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px}
+.header{position:sticky;top:0;background:#fff;z-index:10;border-bottom:1px solid var(--line)}
+.navrow{height:80px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-size:24px;font-weight:800;letter-spacing:-1px;color:var(--blue)}
+.brand i{display:inline-block;width:9px;height:9px;background:var(--blue);border-radius:50%;margin-left:2px}
+.navlinks{display:flex;align-items:center;gap:24px;font-size:13px}
+.navlinks a:hover{color:var(--blue)}
+.button{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;font-size:13px;font-weight:700;background:var(--blue);color:#fff;border-radius:3px;border:1px solid var(--blue);transition:background .2s}
+.button:hover{background:var(--deep)}
+
+/* Hero de la subpágina */
+.page-hero{background:var(--paper);padding:60px 0 50px;border-bottom:1px solid var(--line)}
+.page-title{font-size:clamp(36px,4vw,52px);font-weight:600;max-width:760px;margin-bottom:20px}
+.page-lead{font-size:17px;color:var(--muted);max-width:680px;line-height:1.6}
+
+/* Indicadores de autoridad */
+.service-badges{display:flex;flex-wrap:wrap;gap:28px;margin-top:35px;padding-top:25px;border-top:1px solid var(--line)}
+.badge-item{font-size:12px;color:var(--muted)}
+.badge-item strong{display:block;color:var(--ink);font-size:14px;font-weight:700}
+
+/* Contenido Principal a dos columnas */
+.content-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:70px;padding:70px 0}
+.lead-block h2{font-size:26px;font-weight:600;margin-bottom:18px}
+.lead-block p{color:var(--muted);font-size:15px;line-height:1.7;margin-bottom:20px}
+
+/* Lista de alcances operativos */
+.scope-list{list-style:none;padding:0;margin:30px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.scope-list li{display:flex;align-items:flex-start;gap:12px;font-size:13px;color:var(--ink);border-top:1px solid var(--line);padding-top:12px}
+.scope-list li span{color:var(--blue);font-weight:bold;font-size:16px;line-height:1}
+
+/* Formulario lateral de cotización del servicio */
+.aside-card{background:var(--paper);border:1px solid var(--line);padding:32px;border-radius:3px;align-self:start;position:sticky;top:110px}
+.aside-card h3{font-size:20px;margin-bottom:8px}
+.aside-card p{font-size:13px;color:var(--muted);margin-bottom:20px}
+.aside-card label{display:block;font-size:11px;font-weight:bold;text-transform:uppercase;margin-bottom:5px;color:var(--ink)}
+.aside-card input,.aside-card select,.aside-card textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:2px;margin-bottom:14px;background:#fff;font-size:13px}
+.aside-card .button{width:100%;justify-content:center}
+
+/* Sectores industriales */
+.industries{background:var(--deep);color:#fff;padding:60px 0}
+.industries-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:30px}
+.industry-box{border:1px solid #ffffff20;padding:22px;border-radius:3px}
+.industry-box h4{font-size:16px;font-weight:600;margin-bottom:6px;color:#fff}
+.industry-box p{font-size:12px;color:#a9c7ff}
+
+/* Footer simple */
+.footer{border-top:1px solid var(--line);padding:30px 0;font-size:12px;color:var(--muted)}
+
+@media(max-width:860px){
+  .content-grid{grid-template-columns:1fr;gap:40px}
+  .aside-card{position:static}
+  .industries-grid{grid-template-columns:1fr 1fr}
+  .scope-list{grid-template-columns:1fr}
+}
+</style>
+<link rel="stylesheet" href="assets/navbar.css">
+<script src="assets/navbar.js" defer></script>
+<link rel="stylesheet" href="assets/footer.css">
+<link rel="stylesheet" href="assets/responsive.css">
+<link rel="stylesheet" href="assets/refinements.css">
+</head>
+<body id="inicio-pagina">
+
+  <!-- TOPBAR -->
+
+  <!-- HEADER -->
+  <header class="header site-header">
+  <div class="site-navrow">
+    <a href="index.html" class="site-brand" aria-label="Punto Azul, inicio"><img src="assets/images/logo_white.png" alt="Punto Azul" width="1015" height="168"></a>
+    <button class="site-menu" type="button" aria-expanded="false" aria-controls="navegacion">Menú ☰</button>
+    <nav id="navegacion" class="site-navlinks" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <div class="site-services">
+        <a href="servicios.html">Servicios <span aria-hidden="true">▾</span></a>
+        <ul class="site-services-menu" aria-label="Servicios de Punto Azul">
+          <li><a href="outsourcing.html">Outsourcing</a></li>
+          <li><a href="servicios-transitorios.html">Servicios Transitorios</a></li>
+          <li><a href="payroll.html">Payroll</a></li>
+          <li><a href="consulting.html">Consultoría</a></li>
+        </ul>
+      </div>
+      <a href="blog.html">Blog</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+  <main>
+    <!-- HERO SUBPÁGINA -->
+    <section class="page-hero">
+      <div class="wrap">
+        <h1 class="page-title">Personal calificado para contingencias operativas y reemplazos.</h1>
+        <p class="page-lead">
+          Solución inmediata en reclutamiento, contratación y administración de dotación transitoria bajo estricto cumplimiento de la Ley 20.123 en todo Chile.
+        </p>
+
+        <div class="service-badges">
+          <div class="badge-item">
+            <strong>Jefe Coordinador</strong>
+            Supervisión directa en terreno
+          </div>
+          <div class="badge-item">
+            <strong>24 a 48 Horas</strong>
+            Respuesta ante contingencias
+          </div>
+          <div class="badge-item">
+            <strong>100% Cobertura Legal</strong>
+            F30 y F30-1 al día
+          </div>
+          <div class="badge-item">
+            <strong>Bases Propias</strong>
+            Postulantes evaluados previamente
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CUERPO PRINCIPAL + FORMULARIO DEDICADO -->
+    <section class="wrap content-grid">
+      <div class="lead-block">
+        <h2>Continuidad operativa sin contingencias de arrastre</h2>
+        <p>
+          En Punto Azul resolvemos las necesidades urgentes y estacionales de dotación en las empresas. Nos encargamos de todo el ciclo: desde la selección psicológica y confección de contratos, hasta el pago oportuno de remuneraciones y leyes sociales.
+        </p>
+        <p>
+          Cada servicio cuenta con un <strong>Jefe Coordinador asignado</strong>, encargado de mantener una relación presencial y telefónica constante con los trabajadores y el cliente, asegurando un estándar de respuesta rápido y sin fricciones.
+        </p>
+
+        <h3 style="margin-top: 40px; font-size: 20px;">Causales legales cubiertas:</h3>
+        <ul class="scope-list">
+          <li><span>✓</span> Licencias médicas y descansos de salud</li>
+          <li><span>✓</span> Reemplazos por fuero maternal</li>
+          <li><span>✓</span> Períodos de vacaciones de personal de planta</li>
+          <li><span>✓</span> Proyectos temporales y aumentos de producción</li>
+          <li><span>✓</span> Eventos extraordinarios o faenas específicas</li>
+          <li><span>✓</span> Inicios de nuevas actividades o faenas urgentes</li>
+        </ul>
+
+        <h3 style="margin-top: 40px; font-size: 20px;">Procesos incluidos en la administración:</h3>
+        <ul class="scope-list">
+          <li><span>•</span> Filtro curricular y evaluación por competencias</li>
+          <li><span>•</span> Informes psicolaborales según el perfil</li>
+          <li><span>•</span> Confección y firma de contratos EST</li>
+          <li><span>•</span> Gestión completa de nóminas y finiquitos</li>
+          <li><span>•</span> Declaración y pago puntual en Previred</li>
+          <li><span>•</span> Trazabilidad de asistencia y entrega de reportes</li>
+        </ul>
+      </div>
+
+      <!-- ASIDE: FORMULARIO DIRECTO AL GRANO -->
+      <aside class="aside-card" id="cotizar">
+        <h3>Cotizar Dotación EST</h3>
+        <p>Recibe una propuesta técnica estructurada según la dotación y plazo requerido.</p>
+
+        <form onsubmit="event.preventDefault(); alert('Solicitud enviada a la mesa comercial');">
+          <label>Nombre y Cargo</label>
+          <input type="text" required placeholder="Ej: Marcela Gómez, Jefe de Operaciones">
+
+          <label>Empresa / Razón Social</label>
+          <input type="text" required placeholder="Ej: Logística Central S.A.">
+
+          <label>Correo Corporativo</label>
+          <input type="email" required placeholder="m.gomez@empresa.cl">
+
+          <label>Dotación Requerida (Aprox.)</label>
+          <select>
+            <option>1 a 5 personas</option>
+            <option>6 a 15 personas</option>
+            <option>16 a 50 personas</option>
+            <option>Más de 50 personas</option>
+          </select>
+
+          <label>Causal / Perfil requerido</label>
+          <textarea rows="3" placeholder="Indícanos si es por reemplazo de licencia, bodega, retail, ubicación..."></textarea>
+
+          <button class="button" type="submit">Enviar Solicitud ↗</button>
+        </form>
+      </aside>
+    </section>
+
+    <!-- SECTORES ATENDIDOS -->
+    <section class="industries">
+      <div class="wrap">
+        <span style="font-size:11px; text-transform:uppercase; letter-spacing:.12em; color:#a9c7ff; font-weight:bold">Presencia Comprobada</span>
+        <h2 style="font-size:28px; margin-top:8px">Industrias con dotación activa</h2>
+
+        <div class="industries-grid">
+          <div class="industry-box">
+            <h4>Retail & Supermercados</h4>
+            <p>Reponedores, supervisores y cajeros para picos de venta estacionales.</p>
+          </div>
+          <div class="industry-box">
+            <h4>Banca & Seguros</h4>
+            <p>Personal administrativo, digitadores y soporte de atención al cliente.</p>
+          </div>
+          <div class="industry-box">
+            <h4>Salud (Isapres / Clínicas)</h4>
+            <p>Reemplazos expeditos para áreas operativas y de soporte asistencial.</p>
+          </div>
+          <div class="industry-box">
+            <h4>Minería & Construcción</h4>
+            <p>Cuadrillas con exámenes ocupacionales al día y acreditación en faena.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <div class="site-footer-grid">
+    <div class="site-footer-identity">
+      <a class="site-footer-brand" href="index.html" aria-label="Punto Azul, inicio"><img src="assets/images/logo.png" alt="Punto Azul" width="1015" height="168"></a>
+      <p>Especialistas en recursos humanos.</p>
+    </div>
+    <div>
+      <h2>Dirección</h2>
+      <address>Francisco Bilbao 2774<br>Providencia<br>Santiago de Chile</address>
+    </div>
+    <div>
+      <h2>Contacto</h2>
+      <a href="tel:+56222064132">+56 2 2206 4132</a>
+      <a href="tel:+56222061883">+56 2 2206 1883</a>
+      <a href="mailto:contacto@puntoazul.cl">contacto@puntoazul.cl</a>
+    </div>
+    <div>
+      <h2>Síguenos en</h2>
+      <a class="site-footer-social" href="https://www.linkedin.com/company/puntoazul/" target="_blank" rel="noopener noreferrer" aria-label="Punto Azul en LinkedIn (abre en una pestaña nueva)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.37 24H.4V7.98h4.97V24ZM2.88 5.79A2.89 2.89 0 1 1 2.9 0a2.89 2.89 0 0 1-.02 5.79ZM24 24h-4.96v-7.8c0-1.86-.04-4.25-2.59-4.25-2.59 0-2.99 2.03-2.99 4.12V24H8.5V7.98h4.76v2.19h.07c.66-1.25 2.28-2.58 4.69-2.58 5.01 0 5.98 3.3 5.98 7.59V24Z"/></svg><span>LinkedIn</span></a>
+    </div>
+  </div>
+  <div class="site-footer-base"><div>© 2026 Punto Azul · Propuesta de sitio corporativo.</div></div>
+  <a class="site-footer-up" href="#inicio-pagina" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 14 6-6 6 6"/></svg></a>
+</footer>
+
+</body>
+</html>

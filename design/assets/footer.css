@@ -1,0 +1,17 @@
+.site-footer{position:relative;background:#1247b9;color:#fff;font:400 13px/1.65 Helvetica,Arial,sans-serif;margin-top:0;padding:0;border:0}
+.site-footer .site-footer-grid{width:min(1200px,calc(100% - 80px));margin:auto;padding:48px 0 42px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:40px}
+.site-footer h2{font:700 18px/1.4 Helvetica,Arial,sans-serif;letter-spacing:0;color:#fff;margin:0 0 18px}
+.site-footer p,.site-footer address{font-style:normal;font-size:13px;line-height:1.65;color:#dbe7ff;margin:0}
+.site-footer a{color:#dbe7ff;text-decoration:none;display:block;width:fit-content;max-width:100%;overflow-wrap:anywhere}
+.site-footer a:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
+.site-footer .site-footer-brand{color:#fff;font-size:27px;line-height:1.2;font-weight:800;letter-spacing:-1.4px;margin-bottom:14px}
+.site-footer .site-footer-brand img{display:block;width:210px;max-width:100%;height:auto;filter:brightness(0) invert(1)}
+.site-footer .site-footer-social{display:inline-flex;align-items:center;gap:10px;padding:5px 0}
+.site-footer-social svg{width:18px;height:18px;flex-shrink:0}
+.site-footer-base{background:#103b99;padding:14px 0;font-size:11px;color:#dbe7ff}
+.site-footer-base>div{width:min(1200px,calc(100% - 80px));margin:auto;padding-right:42px}
+.site-footer .site-footer-up{position:absolute;right:24px;bottom:20px;display:grid;place-items:center;width:44px;height:44px;border:3px solid #ffffff50;border-radius:50%;background:#fff;color:#1247b9;box-shadow:0 2px 10px #102d6030}
+.site-footer-up svg{width:20px;height:20px}
+.site-footer a:focus-visible{outline:3px solid #ffcb70;outline-offset:5px}
+@media(max-width:900px){.site-footer .site-footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}}
+@media(max-width:540px){.site-footer .site-footer-grid{width:calc(100% - 40px);grid-template-columns:1fr;gap:28px;padding:36px 0}.site-footer-base>div{width:calc(100% - 40px);padding-right:44px}.site-footer h2{margin-bottom:10px}.site-footer .site-footer-up{right:16px;bottom:14px}}

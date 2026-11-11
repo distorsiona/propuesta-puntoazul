@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Consultoría de RRHH y selección de personal en Chile con Punto Azul. Headhunting, evaluación por competencias y garantía de reemplazo de 3 meses.">
+<title>Consulting & Selección — Punto Azul</title>
+<style>
+:root{--blue:#1247b9;--deep:#102d60;--ink:#172d4b;--muted:#5b6a7e;--line:#dce3eb;--paper:#f4f7fa;--sky:#eaf1ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Helvetica,Arial,sans-serif;line-height:1.6;background:white}
+a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.15;letter-spacing:-.035em}
+.wrap{width:min(1140px,calc(100% - 60px));margin:auto}
+.topbar{background:var(--deep);color:#fff;font-size:11px;letter-spacing:.04em;padding:8px 0}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px}
+.header{position:sticky;top:0;background:#fff;z-index:10;border-bottom:1px solid var(--line)}
+.navrow{height:80px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-size:24px;font-weight:800;letter-spacing:-1px;color:var(--blue)}
+.brand i{display:inline-block;width:9px;height:9px;background:var(--blue);border-radius:50%;margin-left:2px}
+.navlinks{display:flex;align-items:center;gap:24px;font-size:13px}
+.navlinks a:hover{color:var(--blue)}
+.button{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;font-size:13px;font-weight:700;background:var(--blue);color:#fff;border-radius:3px;border:1px solid var(--blue);transition:background .2s}
+.button:hover{background:var(--deep)}
+.page-hero{background:var(--paper);padding:60px 0 50px;border-bottom:1px solid var(--line)}
+.page-title{font-size:clamp(36px,4vw,52px);font-weight:600;max-width:760px;margin-bottom:20px}
+.page-lead{font-size:17px;color:var(--muted);max-width:680px;line-height:1.6}
+.service-badges{display:flex;flex-wrap:wrap;gap:28px;margin-top:35px;padding-top:25px;border-top:1px solid var(--line)}
+.badge-item{font-size:12px;color:var(--muted)}
+.badge-item strong{display:block;color:var(--ink);font-size:14px;font-weight:700}
+.content-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:70px;padding:70px 0}
+.lead-block h2{font-size:26px;font-weight:600;margin-bottom:18px}
+.lead-block p{color:var(--muted);font-size:15px;line-height:1.7;margin-bottom:20px}
+.scope-list{list-style:none;padding:0;margin:30px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.scope-list li{display:flex;align-items:flex-start;gap:12px;font-size:13px;color:var(--ink);border-top:1px solid var(--line);padding-top:12px}
+.scope-list li span{color:var(--blue);font-weight:bold;font-size:16px;line-height:1}
+.aside-card{background:var(--paper);border:1px solid var(--line);padding:32px;border-radius:3px;align-self:start;position:sticky;top:110px}
+.aside-card h3{font-size:20px;margin-bottom:8px}
+.aside-card p{font-size:13px;color:var(--muted);margin-bottom:20px}
+.aside-card label{display:block;font-size:11px;font-weight:bold;text-transform:uppercase;margin-bottom:5px;color:var(--ink)}
+.aside-card input,.aside-card select,.aside-card textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:2px;margin-bottom:14px;background:#fff;font-size:13px}
+.aside-card .button{width:100%;justify-content:center}
+.footer{border-top:1px solid var(--line);padding:30px 0;font-size:12px;color:var(--muted)}
+@media(max-width:860px){.content-grid{grid-template-columns:1fr;gap:40px}.aside-card{position:static}.scope-list{grid-template-columns:1fr}}
+</style>
+<link rel="stylesheet" href="assets/navbar.css">
+<script src="assets/navbar.js" defer></script>
+<link rel="stylesheet" href="assets/footer.css">
+<link rel="stylesheet" href="assets/responsive.css">
+<link rel="stylesheet" href="assets/refinements.css">
+</head>
+<body id="inicio-pagina">
+  <header class="header site-header">
+  <div class="site-navrow">
+    <a href="index.html" class="site-brand" aria-label="Punto Azul, inicio"><img src="assets/images/logo_white.png" alt="Punto Azul" width="1015" height="168"></a>
+    <button class="site-menu" type="button" aria-expanded="false" aria-controls="navegacion">Menú ☰</button>
+    <nav id="navegacion" class="site-navlinks" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <div class="site-services">
+        <a href="servicios.html">Servicios <span aria-hidden="true">▾</span></a>
+        <ul class="site-services-menu" aria-label="Servicios de Punto Azul">
+          <li><a href="outsourcing.html">Outsourcing</a></li>
+          <li><a href="servicios-transitorios.html">Servicios Transitorios</a></li>
+          <li><a href="payroll.html">Payroll</a></li>
+          <li><a href="consulting.html">Consultoría</a></li>
+        </ul>
+      </div>
+      <a href="blog.html">Blog</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <h1 class="page-title">Atracción de talento calificado y consultoría de personas.</h1>
+        <p class="page-lead">Reclutamiento ágil, evaluación psicológica por competencias y garantía de reposición para fortalecer los equipos de tu organización.</p>
+        <div class="service-badges">
+          <div class="badge-item"><strong>Garantía de 3 Meses</strong>Reemplazo sin costo ante desvinculación</div>
+          <div class="badge-item"><strong>Convenios Académicos</strong>Universidades, CFT e Institutos</div>
+          <div class="badge-item"><strong>Evaluación Rigurosa</strong>Pruebas psicolaborales aplicadas</div>
+          <div class="badge-item"><strong>Bases Actualizadas</strong>Tiempos de búsqueda reducidos</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap content-grid">
+      <div class="lead-block">
+        <h2>El perfil preciso con respaldo profesional</h2>
+        <p>Punto Azul cuenta con un equipo calificado y actualizado en metodologías de reclutamiento y selección, apoyando a tu empresa desde el levantamiento del perfil del cargo hasta la entrega de ternas finalistas.</p>
+        <p>Otorgamos una <strong>garantía de reposición sin costo alguno</strong> durante los primeros 3 meses posteriores a la contratación si el candidato seleccionado no se ajusta al perfil, asegurando la inversión de tu organización.</p>
+
+        <h3 style="margin-top:40px;font-size:20px">Servicios y metodologías:</h3>
+        <ul class="scope-list">
+          <li><span>✓</span> Headhunting y búsqueda de perfiles estratégicos</li>
+          <li><span>✓</span> Reclutamiento masivo operativo y comercial</li>
+          <li><span>✓</span> Informes psicolaborales y chequeo de referencias</li>
+          <li><span>✓</span> Levantamiento y descripción de perfiles de cargo</li>
+          <li><span>✓</span> Asesoría en optimización de estructuras de RRHH</li>
+        </ul>
+      </div>
+
+      <aside class="aside-card" id="cotizar">
+        <h3>Solicitar Proceso de Búsqueda</h3>
+        <p>Cuéntanos los requerimientos del cargo y las necesidades de tu equipo.</p>
+        <form onsubmit="event.preventDefault(); alert('Solicitud de selección enviada.');">
+          <label>Nombre y Cargo</label>
+          <input type="text" required placeholder="Ej: Carlos Silva, Jefe de Selección">
+          <label>Empresa</label>
+          <input type="text" required placeholder="Ej: Servicios Financieros Chile">
+          <label>Correo Corporativo</label>
+          <input type="email" required placeholder="csilva@empresa.cl">
+          <label>Tipo de Búsqueda</label>
+          <select>
+            <option>Perfil Operativo / Terreno</option>
+            <option>Perfil Administrativo / Técnico</option>
+            <option>Jefatura / Gerencia (Headhunting)</option>
+            <option>Consultoría Organizacional</option>
+          </select>
+          <label>Detalle del Perfil</label>
+          <textarea rows="3" placeholder="Requisitos del cargo, ubicación y plazo estimado..."></textarea>
+          <button class="button" type="submit">Iniciar Proceso ↗</button>
+        </form>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <div class="site-footer-grid">
+    <div class="site-footer-identity">
+      <a class="site-footer-brand" href="index.html" aria-label="Punto Azul, inicio"><img src="assets/images/logo.png" alt="Punto Azul" width="1015" height="168"></a>
+      <p>Especialistas en recursos humanos.</p>
+    </div>
+    <div>
+      <h2>Dirección</h2>
+      <address>Francisco Bilbao 2774<br>Providencia<br>Santiago de Chile</address>
+    </div>
+    <div>
+      <h2>Contacto</h2>
+      <a href="tel:+56222064132">+56 2 2206 4132</a>
+      <a href="tel:+56222061883">+56 2 2206 1883</a>
+      <a href="mailto:contacto@puntoazul.cl">contacto@puntoazul.cl</a>
+    </div>
+    <div>
+      <h2>Síguenos en</h2>
+      <a class="site-footer-social" href="https://www.linkedin.com/company/puntoazul/" target="_blank" rel="noopener noreferrer" aria-label="Punto Azul en LinkedIn (abre en una pestaña nueva)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.37 24H.4V7.98h4.97V24ZM2.88 5.79A2.89 2.89 0 1 1 2.9 0a2.89 2.89 0 0 1-.02 5.79ZM24 24h-4.96v-7.8c0-1.86-.04-4.25-2.59-4.25-2.59 0-2.99 2.03-2.99 4.12V24H8.5V7.98h4.76v2.19h.07c.66-1.25 2.28-2.58 4.69-2.58 5.01 0 5.98 3.3 5.98 7.59V24Z"/></svg><span>LinkedIn</span></a>
+    </div>
+  </div>
+  <div class="site-footer-base"><div>© 2026 Punto Azul · Propuesta de sitio corporativo.</div></div>
+  <a class="site-footer-up" href="#inicio-pagina" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 14 6-6 6 6"/></svg></a>
+</footer>
+</body>
+</html>

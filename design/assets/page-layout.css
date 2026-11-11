@@ -1,0 +1,46 @@
+/* Escala y alineación comunes a las páginas de la navegación principal. */
+:root {
+  --page-width: 1200px;
+  --page-title-size: clamp(38px, 4vw, 56px);
+  --page-content-space: 40px;
+}
+.inner-page main > section > .wrap,
+.inner-page main > .wrap {
+  width: min(var(--page-width), calc(100% - 80px));
+}
+.inner-page main { min-height: calc(100svh - 90px); }
+.inner-page .page-hero {
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+  padding: 32px 0;
+}
+.inner-page .page-hero > .wrap {
+  min-height: 168px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.inner-page .page-title,
+.hero h1 {
+  font-size: var(--page-title-size);
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -.035em;
+}
+.inner-page .page-title { margin: 0 0 16px; max-width: 100%; }
+.inner-page .page-lead { margin: 0; max-width: 900px; font-size: 18px; line-height: 1.65; color: var(--muted); }
+.inner-page .breadcrumb { position: absolute; top: -20px; margin: 0; font-size: 11px; }
+.inner-page .history-grid,
+.inner-page .contact-layout,
+.inner-page main > .section { padding-top: var(--page-content-space); padding-bottom: var(--page-content-space); }
+.inner-page .contact-layout { align-content: start; }
+@media (max-width: 760px) {
+  :root { --page-content-space: 28px; }
+  .inner-page main { min-height: calc(100svh - 76px); }
+  .inner-page main > section > .wrap,
+  .inner-page main > .wrap { width: calc(100% - 40px); }
+  .inner-page .page-hero { padding: 32px 0 24px; }
+  .inner-page .page-hero > .wrap { min-height: 180px; }
+  .inner-page .page-lead { font-size: 17px; }
+}

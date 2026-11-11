@@ -1,0 +1,48 @@
+/* Shared typography and the official four-service catalog. */
+body { font-family: Helvetica, Arial, sans-serif; }
+.services-heritage { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.services-page .service-link { border: 1px solid var(--line); border-radius: 20px; padding: 28px; }
+.services-page .services-heritage { gap: 24px; }
+.about-page .history-block p,
+.about-page .cert-card p,
+.about-page .val-item p { font-size: 18px; line-height: 1.7; }
+.about-page .history-block h2,
+.about-page .values-strip h2 { font-size: clamp(30px, 3vw, 40px); font-weight: 700; margin-top: 100px; }
+.about-page .cert-card h3,
+.about-page .val-item h3 { font-size: 23px; }
+.about-page .cert-card { border-radius: 20px; }
+.about-page .values-grid { gap: 24px; }
+.about-page .val-item { border: 0; border-radius: 0; background: transparent; padding: 0; }
+.about-page .val-item p { color: #e0eaff; }
+
+/* Contact occupies the first desktop viewport; its footer follows directly. */
+.contact-page main { min-height: calc(100svh - 90px); display: flex; flex-direction: column; }
+.contact-page .page-hero { padding: 22px 0 18px; }
+.contact-page .page-title { font-size: clamp(26px, 2.5vw, 36px); max-width: 900px; margin: 0; }
+.contact-page .contact-layout { flex: 1; align-content: center; gap: 28px; padding: 24px 0; }
+.contact-page .contact-card,
+.contact-page .form-box { padding: 24px; border-radius: 20px; }
+.contact-page .contact-card h2 { margin-bottom: 18px; }
+.contact-page .info-row { margin-bottom: 14px; padding-bottom: 12px; }
+.contact-page .info-row:last-child { margin-bottom: 0; padding-bottom: 0; }
+.contact-page .form-box p { margin-bottom: 16px; }
+.contact-page form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 16px; }
+.contact-page .field-wide,
+.contact-page form > .button { grid-column: 1 / -1; }
+.contact-page .form-box label { font-size: 12px; margin-bottom: 4px; }
+.contact-page .form-box input,
+.contact-page .form-box select,
+.contact-page .form-box textarea { font: inherit; font-size: 16px; min-height: 44px; padding: 8px 10px; margin: 0; }
+.contact-page .form-box textarea { height: 80px; min-height: 80px; }
+@media (max-width: 860px) {
+  .contact-page .contact-layout { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .services-heritage { grid-template-columns: 1fr; }
+  .contact-page main { min-height: calc(100svh - 76px); }
+  .contact-page form { grid-template-columns: 1fr; }
+  .contact-page .page-hero { padding: 28px 0; }
+}
+
+/* Ajuste del título de los pilares. */
+.about-page .values-strip h2 { margin-top: -8px; }

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Conoce la propuesta de Punto Azul: soluciones de recursos humanos, outsourcing, servicios transitorios, selección y gestión de personas para empresas en Chile.">
+<meta name="theme-color" content="#1247b9">
+<title>Servicios — Punto Azul</title>
+<style>
+:root{--blue:#1247b9;--deep:#102d60;--ink:#172d4b;--muted:#5b6a7e;--line:#dce3eb;--paper:#f4f7fa;--sky:#eaf1ff}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;color:var(--ink);font-family:Helvetica,Arial,sans-serif;line-height:1.6;background:white}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button,a,input,select,textarea{ -webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #eea83d;outline-offset:5px}h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.12;letter-spacing:-.045em}button{cursor:pointer}.wrap{width:min(1200px,calc(100% - 80px));margin:auto}.eyebrow{font-size:11px;letter-spacing:.16em;font-weight:700;text-transform:uppercase;display:block;margin-bottom:23px}.topbar{background:var(--deep);color:#fff;font-size:11px;letter-spacing:.04em;padding:8px 0}.topbar .wrap{display:flex;justify-content:space-between;gap:16px}.topbar a{opacity:.8}.header{position:sticky;top:0;background:#fff;z-index:10;border-bottom:1px solid var(--line)}.navrow{height:89px;display:flex;align-items:center;justify-content:space-between;gap:30px}.brand{font-size:27px;font-weight:800;letter-spacing:-1.4px;line-height:1;color:var(--blue);white-space:nowrap}.brand small{display:block;font-size:8px;letter-spacing:.18em;text-transform:uppercase;margin-top:8px;font-weight:500;color:var(--muted)}.brand i{display:inline-block;width:10px;height:10px;background:var(--blue);border-radius:50%;margin-left:3px}.navlinks{display:flex;align-items:center;gap:27px;font-size:13px}.navlinks a:hover{color:var(--blue)}.button{display:inline-flex;align-items:center;justify-content:center;gap:25px;padding:15px 23px;font-size:13px;font-weight:700;background:var(--blue);color:#fff;border:1px solid var(--blue);border-radius:3px;transition:background .2s,transform .2s}.button:hover{background:var(--deep);transform:translateY(-2px)}.button.light{background:white;color:var(--blue);border-color:white}.button.outline{background:transparent;color:var(--ink);border-color:#c2cedd}.button.outline:hover{background:var(--sky)}.menu{display:none;border:1px solid var(--line);background:white;padding:8px 13px}.hero{padding:68px 0 56px;background:var(--paper);overflow:hidden}.herogrid{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:center}.hero .eyebrow{color:var(--blue);display:flex;align-items:center;gap:10px}.hero .eyebrow:before{content:'';width:7px;height:7px;background:var(--blue);border-radius:50%}h1{font-size:clamp(44px,4.9vw,68px);font-weight:500;max-width:650px}h1 em{font-style:normal;color:var(--blue)}.intro{color:var(--muted);max-width:480px;font-size:16px;margin-top:25px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}.herofoot{margin-top:37px;font-size:11px;color:var(--muted);display:flex;gap:18px;align-items:center}.herofoot:before{content:'';width:34px;height:1px;background:var(--blue)}.visual{min-height:450px;background:var(--blue);color:white;position:relative;overflow:hidden;padding:35px;display:flex;flex-direction:column;justify-content:space-between;border-radius:3px}.visual:before,.visual:after{content:'';position:absolute;width:380px;height:380px;border:1px solid #ffffff30;border-radius:50%;top:50px;left:45px}.visual:after{width:275px;height:275px;top:102px;left:97px}.visual-label{font-size:10px;letter-spacing:.17em;position:relative;z-index:1}.orbit{position:absolute;inset:0;display:grid;place-items:center}.orbit-center{height:145px;width:145px;background:#fff;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--blue);font-size:25px;line-height:1;letter-spacing:-1px;font-weight:700;box-shadow:0 0 0 17px #ffffff0d}.orbit-center small{font-size:9px;margin-top:9px;letter-spacing:.08em;font-weight:400}.node{position:absolute;background:#2459cb;border:1px solid #ffffff40;padding:10px 16px;font-size:12px;z-index:2;border-radius:3px}.node.one{top:100px;left:25px}.node.two{top:151px;right:21px}.node.three{bottom:103px;left:41px}.visual-bottom{display:flex;justify-content:space-between;align-items:end;z-index:1;font-size:12px}.visual-bottom strong{font-size:22px;font-weight:400;letter-spacing:-.03em;line-height:1.25}.visual-bottom span{font-size:28px}.principles{border-bottom:1px solid var(--line)}.principle-row{display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr;padding:26px 0;gap:30px;font-size:13px}.principle-row strong{font-weight:500;color:var(--muted)}.principle-row span{border-left:1px solid var(--line);padding-left:26px}.principle-row b{color:var(--blue);margin-right:10px}.section{padding:90px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:45px;margin-bottom:50px}.section-head .eyebrow{color:var(--blue);margin-bottom:17px}h2{font-size:clamp(32px,3.3vw,45px);font-weight:500}.section-head p{max-width:350px;font-size:14px;color:var(--muted)}
+
+/* Rediseño sección servicios con enlaces directos */
+.services-heritage{display:grid;grid-template-columns:repeat(3,1fr);gap:48px 36px}
+.service-link{display:block;color:inherit;text-decoration:none}
+.service-item{display:grid;grid-template-columns:64px 1fr;gap:20px;align-items:start}
+.service-icon{width:64px;height:64px;background:#3888c7;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;flex-shrink:0;transition:transform .2s ease,background .2s ease}
+.service-link:hover .service-icon{transform:scale(1.08);background:var(--blue)}
+.service-icon svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.service-body h3{font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);margin-bottom:8px;line-height:1.3;display:flex;align-items:center;justify-content:space-between}
+.service-body h3 span{font-size:13px;color:var(--blue);opacity:0;transform:translateX(-4px);transition:all .2s ease}
+.service-link:hover .service-body h3 span{opacity:1;transform:translateX(0)}
+.service-body p{font-size:13px;line-height:1.55;color:var(--muted);margin:0}
+
+.about{background:var(--deep);color:white}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:start}.about h2{font-size:44px;max-width:430px}.about .eyebrow{color:#a9c7ff}.about p{font-size:15px;color:#c4d1e5;margin-top:25px;max-width:460px}.values{margin-top:28px}.value{display:grid;grid-template-columns:35px 1fr;gap:15px;border-top:1px solid #ffffff26;padding:22px 0}.value span{color:#8ab0ff;font-size:11px}.value h3{font-weight:500;font-size:20px;letter-spacing:-.02em}.value p{font-size:13px;margin-top:8px}.process{display:grid;grid-template-columns:repeat(3,1fr);gap:45px;margin-top:48px}.step{border-top:1px solid var(--line);padding-top:22px}.step span{font-size:12px;color:var(--blue)}.step h3{font-size:21px;font-weight:500;margin:20px 0 12px}.step p{font-size:14px;color:var(--muted)}.career{background:var(--sky);padding:50px;display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center;border-left:4px solid var(--blue)}.career h2{font-size:37px}.career p{font-size:14px;color:var(--muted);margin:20px 0}.career .eyebrow{color:var(--blue);margin-bottom:16px}.career ol{padding-left:22px;margin:0}.career li{padding:14px 0 14px 12px;border-bottom:1px solid #cddaf0;font-size:14px}.career li::marker{color:var(--blue);font-weight:700}.contact{background:var(--paper)}.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:90px}.contact h2{font-size:44px}.contact-intro{color:var(--muted);font-size:15px;margin:25px 0 32px}.contact-info{border-top:1px solid var(--line);padding:18px 0}.contact-info span{font-size:11px;display:block;color:var(--muted);margin-bottom:5px}.contact-info a{font-size:17px}.contact-info a:hover{color:var(--blue)}.contact-info p{font-size:14px}.formbox{background:white;padding:32px;border:1px solid var(--line)}.tabs{display:flex;border-bottom:1px solid var(--line);margin-bottom:25px}.tabs button{padding:0 0 13px;margin-right:27px;background:none;border:0;border-bottom:2px solid transparent;font-size:13px;color:var(--muted)}.tabs button[aria-selected=true]{color:var(--blue);border-color:var(--blue);font-weight:700}.fields{display:grid;grid-template-columns:1fr 1fr;gap:17px}.field.full{grid-column:1/-1}label{display:block;font-size:12px;margin-bottom:6px}input,select,textarea{border:1px solid #cbd5e1;border-radius:2px;width:100%;background:white;padding:11px 12px;color:var(--ink);font-size:13px}input:focus,select:focus,textarea:focus{outline:2px solid var(--blue);outline-offset:1px}textarea{resize:vertical;min-height:100px}.form-note{font-size:11px;color:var(--muted);margin:18px 0}.formbox .button{width:100%}.status{font-size:12px;color:var(--blue);margin-top:14px}.footer{padding:40px 0 22px}.footer-top{display:flex;justify-content:space-between;gap:35px;align-items:center;padding-bottom:30px}.footer-top p{font-size:12px;color:var(--muted)}.footer-bottom{border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;gap:20px;font-size:10px;color:var(--muted)}.skip{position:fixed;top:-100px;left:15px;z-index:20;background:white;padding:12px}.skip:focus{top:10px}[hidden]{display:none!important}@media(min-width:1500px){.hero{padding:90px 0}}@media(max-width:1000px){.wrap{width:calc(100% - 48px)}.navlinks{gap:15px}.navlinks .button{padding:12px}.herogrid{gap:30px}.visual{min-height:420px;padding:25px}.node.two{right:10px}.about-grid,.contact-grid{gap:45px}.career{gap:35px}.navlinks a{font-size:12px}.services-heritage{grid-template-columns:1fr 1fr;gap:36px 24px}}@media(max-width:760px){.wrap{width:calc(100% - 40px)}.topbar .wrap>a{display:none}.navrow{height:75px}.brand{font-size:24px}.menu{display:block}.navlinks{display:none;position:absolute;top:75px;left:0;right:0;background:#fff;padding:24px;align-items:stretch;border-bottom:1px solid var(--line);flex-direction:column;gap:22px}.navlinks.open{display:flex}.navlinks a{font-size:15px}.hero{padding:43px 0}.herogrid{grid-template-columns:1fr;gap:35px}h1{font-size:48px}.intro{font-size:15px}.visual{min-height:370px}.visual:before{left:calc(50% - 190px);top:0}.visual:after{left:calc(50% - 137px);top:52px}.node.one{top:75px}.node.two{top:115px}.node.three{bottom:83px}.orbit-center{width:125px;height:125px}.principle-row{grid-template-columns:1fr 1fr;gap:20px;font-size:11px}.principle-row span{padding-left:15px}.section{padding:60px 0}.section-head{display:block;margin-bottom:30px}.section-head p{margin-top:22px;max-width:100%}.services-heritage{grid-template-columns:1fr;gap:30px}.service-item{grid-template-columns:52px 1fr;gap:16px}.service-icon{width:52px;height:52px}.service-icon svg{width:22px;height:22px}.about-grid,.contact-grid,.career{grid-template-columns:1fr;gap:32px}.about h2,.contact h2{font-size:36px}.process{grid-template-columns:1fr;gap:25px;margin-top:30px}.step h3{margin-top:13px}.career{padding:30px 24px}.career h2{font-size:33px}.formbox{padding:24px}.footer-top{align-items:start;flex-direction:column;gap:22px}.footer-bottom{flex-direction:column;gap:10px}.herofoot{margin-top:25px}.actions .button{padding:14px 18px;gap:18px}}@media(max-width:420px){h1{font-size:41px}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.actions{flex-direction:column}.hero .eyebrow{font-size:9px}.visual-bottom strong{font-size:20px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+<link rel="stylesheet" href="assets/navbar.css">
+<script src="assets/navbar.js" defer></script>
+<link rel="stylesheet" href="assets/footer.css">
+<link rel="stylesheet" href="assets/responsive.css">
+<link rel="stylesheet" href="assets/refinements.css">
+<link rel="stylesheet" href="assets/page-layout.css">
+</head>
+<body id="inicio-pagina" class="services-page inner-page">
+<a href="#contenido" class="skip">Saltar al contenido</a>
+<header class="header site-header">
+  <div class="site-navrow">
+    <a href="index.html" class="site-brand" aria-label="Punto Azul, inicio"><img src="assets/images/logo_white.png" alt="Punto Azul" width="1015" height="168"></a>
+    <button class="site-menu" type="button" aria-expanded="false" aria-controls="navegacion">Menú ☰</button>
+    <nav id="navegacion" class="site-navlinks" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <div class="site-services">
+        <a href="servicios.html">Servicios <span aria-hidden="true">▾</span></a>
+        <ul class="site-services-menu" aria-label="Servicios de Punto Azul">
+          <li><a href="outsourcing.html">Outsourcing</a></li>
+          <li><a href="servicios-transitorios.html">Servicios Transitorios</a></li>
+          <li><a href="payroll.html">Payroll</a></li>
+          <li><a href="consulting.html">Consultoría</a></li>
+        </ul>
+      </div>
+      <a href="blog.html">Blog</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido"><section class="page-hero"><div class="wrap"><h1 class="page-title">Nuestros servicios</h1><p class="page-lead">Soluciones de outsourcing, servicios transitorios, payroll y consultoría para tu empresa.</p></div></section><section class="section" id="servicios">
+  <div class="wrap">
+
+
+    <div class="services-heritage">
+<a href="outsourcing.html" class="service-link">
+        <article class="service-item">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <div class="service-body">
+            <h3>Outsourcing <span>↗</span></h3>
+            <p>Externalización de cuadrillas, supervisores, administración y logística con experiencia en retail masivo.</p>
+          </div>
+        </article>
+      </a>
+<a href="servicios-transitorios.html" class="service-link">
+        <article class="service-item">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="20" x2="21" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" y1="15" x2="21" y2="21"></line><line x1="4" y1="4" x2="9" y2="9"></line></svg>
+          </div>
+          <div class="service-body">
+            <h3>Servicios Transitorios <span>↗</span></h3>
+            <p>Contingencia laboral, licencias médicas, vacaciones, reemplazo fuero maternal y Jefe Coordinador asignado.</p>
+          </div>
+        </article>
+      </a>
+<a href="payroll.html" class="service-link">
+        <article class="service-item">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+          </div>
+          <div class="service-body">
+            <h3>Payroll <span>↗</span></h3>
+            <p>Pago de cotizaciones en Previred, finiquitos, app web/móvil y confidencialidad en Rol General y Rol Executive.</p>
+          </div>
+        </article>
+      </a>
+<a href="consulting.html" class="service-link">
+        <article class="service-item">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line><line x1="2" y1="20" x2="22" y2="20"></line></svg>
+          </div>
+          <div class="service-body">
+            <h3>Consultoría <span>↗</span></h3>
+            <p>Ayudamos a las organizaciones a identificar y definir posibilidades de mejora en la gestión de sus personas.</p>
+          </div>
+        </article>
+      </a>
+    </div>
+  </div>
+</section></main><footer class="site-footer">
+  <div class="site-footer-grid">
+    <div class="site-footer-identity">
+      <a class="site-footer-brand" href="index.html" aria-label="Punto Azul, inicio"><img src="assets/images/logo.png" alt="Punto Azul" width="1015" height="168"></a>
+      <p>Especialistas en recursos humanos.</p>
+    </div>
+    <div>
+      <h2>Dirección</h2>
+      <address>Francisco Bilbao 2774<br>Providencia<br>Santiago de Chile</address>
+    </div>
+    <div>
+      <h2>Contacto</h2>
+      <a href="tel:+56222064132">+56 2 2206 4132</a>
+      <a href="tel:+56222061883">+56 2 2206 1883</a>
+      <a href="mailto:contacto@puntoazul.cl">contacto@puntoazul.cl</a>
+    </div>
+    <div>
+      <h2>Síguenos en</h2>
+      <a class="site-footer-social" href="https://www.linkedin.com/company/puntoazul/" target="_blank" rel="noopener noreferrer" aria-label="Punto Azul en LinkedIn (abre en una pestaña nueva)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.37 24H.4V7.98h4.97V24ZM2.88 5.79A2.89 2.89 0 1 1 2.9 0a2.89 2.89 0 0 1-.02 5.79ZM24 24h-4.96v-7.8c0-1.86-.04-4.25-2.59-4.25-2.59 0-2.99 2.03-2.99 4.12V24H8.5V7.98h4.76v2.19h.07c.66-1.25 2.28-2.58 4.69-2.58 5.01 0 5.98 3.3 5.98 7.59V24Z"/></svg><span>LinkedIn</span></a>
+    </div>
+  </div>
+  <div class="site-footer-base"><div>© 2026 Punto Azul · Propuesta de sitio corporativo.</div></div>
+  <a class="site-footer-up" href="#inicio-pagina" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 14 6-6 6 6"/></svg></a>
+</footer><script>
+</script></body></html>
